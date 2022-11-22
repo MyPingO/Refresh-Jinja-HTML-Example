@@ -1,0 +1,5 @@
+{% if user.numbers %}
+    {% for num in user.numbers|reverse %}
+        <li class="list-group-item" style="width: 33vw; margin: auto;">{{ num.number }}</li>
+    {% endfor %}
+{% endif %}
